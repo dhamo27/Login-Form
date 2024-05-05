@@ -4,18 +4,22 @@ margin:0%;
 box-sizing: border-box;
 font-family: "Poppins", sans-serif;
 text-decoration: none;
+
 }
 .cont{
    
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,9,20,1) 0%);
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+   
+    
+}   
 .container{
     position: absolute;
+    
     
     background: linear-gradient(
     to right,
@@ -55,6 +59,7 @@ white 50%,
         margin: 10px;
         border-radius:  50px;
         border: 2px solid black;
+        width: 350px;
     }
     .terms{
         margin: 10px;
@@ -79,12 +84,12 @@ white 50%,
         }
         .right{
             position: absolute;
-            top: 20px;
-            left: 250px;
+            top: 25px;
+            left: 370px;
             
         }
         .right img{
-            height: 70vh;
+            height: 60vh;
 animation: zoom 3s ease-in-out infinite;
 animation-timing-function: infinite;
         }
@@ -99,39 +104,37 @@ animation-timing-function: infinite;
                 transform: translateY(0) scale(1.0);
             }
           }
+          
 
           @media screen and (max-width: 768px) {
             .right img {
-                height: 50vh;
+                height: 30vh;
 
             }
             .right{
                 position: absolute;
-                top: 50px;
-                left: 200px;
+                top:120px;
+                left: 190px;
                 
             }
 
             .container{
                 position: absolute;
                 
-                background: linear-gradient(
-                to right,
-            white 0%,
-            white 50%,
-                black 50%,
-                black 100%);
+                background: white;
             
                 box-shadow:  black 0px 15px 10px;
-                width: 90vh;
-                height: 340px;
+                width: 60vh;
+                height: 400px;
                 border-radius: 10px;
+               
                 }
                 .details input{
                     padding: 5px;
                     margin: 5px;
                     border-radius:  50px;
                     border: 1px solid black;
+                    width: 160px;
                 }
                 .terms{
                     font-size: 10px;
@@ -143,10 +146,29 @@ animation-timing-function: infinite;
             left: 30px;
             
                 }
+                .left a{
+font-size: 15px;
+                }
                 .cont{
                     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(229,9,20,1) 0%);
-    height: 120vh;
+    height: 140vh;
     width: 100vh;
     
                 }
+                .right img{
+                    height: 30vh;
+        animation: zoom 3s ease-in-out infinite;
+        animation-timing-function: infinite;
+                }
+                @keyframes zoom{
+                    0%{
+                        transform: translateY(-80px);
+                    }
+                    50%{
+                        transform: translateY(70px);
+                    }
+                    100%{
+                        transform: translateY(-80px);
+                    }
+                  }
           }
